@@ -1,0 +1,49 @@
+.sign_cont{
+    height: 17vh;
+    display: flex;
+    flex-direction: row;
+    // background-color: aqua;
+    font-family: "Inter", sans-serif;
+    padding: 2.5rem 18rem;
+    justify-content:space-around;
+
+}
+.heady{
+    font-size: 2.2rem;
+    width: 50%;
+    color: #5C6874;
+}
+input {
+    padding: 0.5rem 1rem; /* Add padding to the input */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    font-size: 1rem;
+    width: 30vh;
+    border: none;
+    background-color: rgb(225, 235, 235);
+  }
+  
+  .deco {
+    position: relative;
+    right: 1rem;
+    top: .2rem;
+    font-size: 1rem;
+    max-height: 3rem;
+    transform: scale(.88);
+    background-color: #007bff; /* Add a decorative line */
+    margin-top: 0.5rem; /* Add some space between input and line */
+    max-width: fit-content;
+    border-radius: 0px 5px 5px 0px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .sign_cont{
+      flex-direction: column;
+      padding:0;
+      align-items: center;
+    }
+      .heady{
+        font-size: 1rem;
+        width: 100vh;
+        text-align: center;
+      }
+  }

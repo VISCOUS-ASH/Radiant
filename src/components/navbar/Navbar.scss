@@ -1,0 +1,63 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 280px;
+    justify-content: space-evenly;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+
+    @media only screen and (max-width: 768px) {
+      padding: 10px 20px; // Adjust padding for smaller screens
+      flex-direction: column; // Stack items vertically
+      align-items: flex-start; // Align items to the start
+    width: 100%;
+    .navbar{
+      padding: 0;
+    }
+    }
+  
+  
+    &__search {
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+      margin-left: 4rem;
+      width: 200px;
+      font-size: 1rem;
+      background-color: #fff; // Adjust background color for input
+      color: #333; // Adjust text color for input
+      background-image: url('../../assets/IMAGE.png'); // Set the image as background
+      background-repeat: no-repeat;
+      background-position: 8px center; // Adjust position of the icon
+      background-size: 16px; // Adjust size of the icon
+      ::placeholder {
+        color: transparent; // Hide the original placeholder text
+      }
+      &.has-value {
+        background-image: none; // Hide the background image when input has value
+      }
+    }
+  
+    &__links {
+      display: flex;
+      padding-right: 5rem;
+    //   background-color: antiquewhite;
+  
+      & .navbar__link {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 1.5rem;
+        margin-left: .7rem;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        // background-color: aqua;
+  
+        &:hover {
+          background-color: #555;
+        }
+      }
+    }
+  }
+  

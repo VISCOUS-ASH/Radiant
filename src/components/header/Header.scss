@@ -1,0 +1,103 @@
+.head {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 18rem;
+    font-family: "Inter", sans-serif;
+
+   
+
+    .first {
+        font-size: 3.5rem;
+    }
+
+    .second {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        font-weight: 400;
+        font-size: .84rem;
+        justify-content: flex-start;
+        padding: .4rem 0;
+        border-top: 3px solid rgba(225, 228, 230, 1);
+        border-bottom: 3px solid rgba(225, 228, 230, 1);
+
+        div {
+            padding-left: 1.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .sec_last {
+            padding-left: 21rem;
+            gap: .7rem;
+        }
+    }
+
+    .third {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        font-weight: 400;
+        font-size: .7rem;
+        font-family: "inter";
+        // color: #e32a2a;
+        margin-right: 6.1rem;
+        padding: 1rem 1rem;
+
+        button {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+            color:#333333;
+
+            &:hover {
+                border: solid 1px #d2d2d5;
+                background-color: #ffffff;
+                color: #333333; // Change text color on hover to gray
+            }
+        }
+    }
+
+    .fourth {
+        display: flex;
+        padding: .4rem 0;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+        font-weight: 400;
+        font-size: .87rem;
+    }
+
+    .image {
+        padding-top: .8rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide (tablets and smaller) */
+    .head {
+      font-size: .5rem; /* Adjust font size */
+      flex-direction: column;
+    //   flex-wrap: nowrap;
+      align-items: center;
+      width:60%;
+      padding: 2.5rem;
+    }
+    .third{
+        padding-left: 2rem;
+    }
+    .fourth{
+        padding: 2rem;
+        margin: 2rem;
+        margin-left: 5.5rem;
+    }
+    .second{
+        flex-direction: column;
+    }
+}

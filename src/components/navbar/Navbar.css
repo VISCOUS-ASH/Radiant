@@ -1,0 +1,59 @@
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 280px;
+  justify-content: space-evenly;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .navbar .navbar {
+    padding: 0;
+  }
+}
+.navbar__search {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 4rem;
+  width: 200px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  background-image: url("../../assets/IMAGE.png");
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 16px;
+}
+.navbar__search ::-moz-placeholder {
+  color: transparent;
+}
+.navbar__search ::placeholder {
+  color: transparent;
+}
+.navbar__search.has-value {
+  background-image: none;
+}
+.navbar__links {
+  display: flex;
+  padding-right: 5rem;
+}
+.navbar__links .navbar__link {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 1.5rem;
+  margin-left: 0.7rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.navbar__links .navbar__link:hover {
+  background-color: #555;
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,39 @@
+.foot {
+  background-color: #212731;
+  width: 100%;
+  height: 55vh;
+  color: #B6BDC4;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+  margin-bottom: 0;
+}
+.foot ul {
+  list-style-type: none;
+}
+.foot .foot_ {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.7rem;
+}
+.foot p {
+  font-size: 1.2rem;
+  margin-bottom: -0.6rem;
+}
+.foot li {
+  font-size: 0.8rem;
+}
+.foot .foot_3 {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: row;
+}
+.foot .foot_3 p {
+  font-size: 0.9rem;
+}
+.foot .foot_3 svg {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=Footer.css.map */
